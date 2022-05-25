@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="global">
+        <!-- <div class="bar">
+            <h1>MyAmtech!</h1>
+        </div> -->
+    <section>
+        <div class="btnhome">
+            <label class=" " for="#" onclick="btn1()">HOME</label>
+            <ul class="dropdown" id="listHome">
+                <a href="index.html"><li>Home list1</li></a>
+                <a href="index.html"><li>Home list2</li></a>
+                <a href="index.html"><li>Home list3</li></a>
+            </ul>
+        </div>
+        <div class="btnabout">
+            <label for="#" onclick="btn2()">ABOUT</label>
+            <ul class="dropdown" id="listAbout">
+                <a href="index.html"><li>About list1</li></a>
+                <a href="index.html"><li>About list2</li></a>
+                <a href="index.html"><li>About list3</li></a>
+            </ul>
+        </div>
+
+        <div class="btncontact">
+            <label for="listContact" onclick="btn3()">CONTACT</label>
+            <ul class="dropdown" id="listContact">
+                <a href="index.html"><li>Contact list1</li></a>
+                <a href="index.html"><li>Contact list2</li></a>
+                <a href="index.html"><li>Contact list3</li></a>
+            </ul>
+        </div>
+    </section>
+    </div>
+
+    
+    <script>
+            let btnhome = document.getElementById('listHome');
+            let btnabout = document.getElementById('listAbout');
+            let btncontact = document.getElementById('listContact');
+
+        // home function
+        function btn1(){
+            btnhome.style.display='block';
+            btnabout.style.display='none';
+            btncontact.style.display='none';
+        }
+        // about function
+        function btn2(){
+            btnabout.style.display='block';
+            btnhome.style.display='none';
+            btncontact.style.display='none';
+            }
+        // contact function
+        function btn3(){
+            btncontact.style.display='block';
+            btnhome.style.display='none';
+            btnabout.style.display='none';
+            }
+
+            
+    </script>
+    
+</body>
+</html>

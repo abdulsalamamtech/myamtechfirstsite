@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <style>
+        section{
+            /* position: relative; */
+        }
+        .formbox{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: -3px -2px 3px rgba(0,0,0, 0.2), 3px 2px 3px rgba(0,0,0, 0.2);
+            background: rgba(0,0,0, 0.1);
+
+        }
+        .formbox h1{
+            font-size: 30px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 350px;
+            height: 480px;
+            border: 1px solid rgba(0,0,0, 0.2);
+        }
+        .imgbox{
+            width:100px;
+            height: 100px;
+        }
+        .imgbox img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        input#email, input#password, input#submit{
+            width: 250px;
+            height: 30px;
+            font-size: 20px;
+            padding: 2px 8px;
+            border: 1px solid rgba(0,0,0, 0.2);
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+        input#email::placeholder, input#password::placeholder{
+            opacity: 0.5;
+        }
+        input#submit{
+            background: blue;
+            color: white;
+            height: 40px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            margin: 5px 0px;
+        }
+        input#submit:hover{
+            background: rgb(10, 2, 133);
+            transition: 0.8s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="formbox">
+            <form action="#">
+            <div class="imgbox">
+                <img src="IMG_wtp_toon1.jpg" alt="">
+            </div>
+            <h1>Please sign in</h1>
+            <input type="email" name="email" id="email" placeholder="Email address" required>
+            <!-- <br> -->
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <!-- <br> -->
+            <label for="check">
+            <input type="checkbox" name="check" id="check">
+            Remember me</label>
+            <br>
+            <input type="submit" value="Sign in" id="submit">
+            <br>
+            <p>&copy; 2017-2022</p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
